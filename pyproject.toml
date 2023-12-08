@@ -1,0 +1,21 @@
+[build-system]
+requires = ["poetry-core>=1.8.1"]
+build-backend = "poetry.core.masonry.api"
+
+[tool]
+  [tool.commitizen]
+  version_provider = "poetry"
+  major_version_zero = true
+
+  [tool.poetry]
+  name = "Pre-commit Language Versions"
+  version = "0.0.0"
+  description = "Minimal Test Repository For Proposed Renovate Feature"
+  authors = ["Kurt von Laven <kurt.von.laven@gmail.com>"]
+  license = "MIT"
+
+  [tool.poetry.dependencies]
+  python = "==3.12.0"
+
+  [tool.poetry.group.dev.dependencies]
+  pre-commit = "==3.5.0"
